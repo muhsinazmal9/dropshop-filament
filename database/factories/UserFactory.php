@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\UserStatus;
+use App\Enums\UserStatus;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
