@@ -27,11 +27,18 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('dashboard')
+            // authentication related
             ->login()
             ->registration()
+            // style related
             ->colors([
-                'primary' => Color::Emerald,
+                'primary' => Color::Indigo
             ])
+            ->favicon(asset('favicon.ico'))
+            ->brandName('Techxires')
+            ->brandLogo(asset('logo.png'))
+            ->darkModeBrandLogo(asset('logo_dark.png'))
+            // other stuffs
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([])
